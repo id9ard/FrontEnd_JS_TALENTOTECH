@@ -1,8 +1,8 @@
 // Imagenes del slider
 const images = [
-    "../img/safari4.jpg",
-    "../img/safari5.jpg",
-    "../img/safari3.png",
+    "./img/safari4.jpg",
+    "./img/safari5.jpg",
+    "./img/safari3.png",
 ];
 
 const audio_node = document.querySelector(".navR_content-left");
