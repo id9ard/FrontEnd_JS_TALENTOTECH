@@ -22,7 +22,7 @@ function changeAudio() {
         if (audio_node.value == "volx") audio_node.value = "vol";
         else audio_node.value = "volx";
         audio_node.innerHTML = `
-            <img class="audio" src="../img/${audio_node.value}.svg" alt="audio">`
+            <img class="audio" src="./img/${audio_node.value}.svg" alt="audio">`
     });
 }
 
