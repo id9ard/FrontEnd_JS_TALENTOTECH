@@ -17,10 +17,16 @@ function changeImage() {
 }
 
 // Cambiar el icono de volumen con cada "click"
+let audio = new Audio("./audio/audio.mp3");
 function changeAudio() {
     audio_node.addEventListener("click", () => {
-        if (audio_node.value == "volx") audio_node.value = "vol";
-        else audio_node.value = "volx";
+        if (audio_node.value == "volx") {
+            audio.play();
+            audio_node.value = "vol";
+        } else {
+            audio.pause();
+            audio_node.value = "volx";
+        }
         audio_node.innerHTML = `
             <img class="audio" src="./img/${audio_node.value}.svg" alt="audio">`
     });
