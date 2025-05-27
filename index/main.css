@@ -131,17 +131,14 @@
     margin: 0;
     line-height: 75%;
     position: absolute;
-    color: var(--color-white);
+    color: var(--color-grey);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* .two_image-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 150%;
-    backdrop-filter: blur(0px);
-} */
+.two_image-blur {}
+
+.two_content_item:hover .two_item-title {
+    color: var(--color-white);
+}

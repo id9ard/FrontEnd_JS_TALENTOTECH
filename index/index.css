@@ -18,6 +18,7 @@ body {
     --color-primary: #4B3621;
     --color-black: #181919;
     --color-white: #ece5d5;
+    --color-grey: rgba(236, 229, 213, 0.46);
     font-family: Inter, sans-serif;
 }
 
