@@ -7,8 +7,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--color-white);
+    background-image: url(../img/noise2.png);
+    background-position: 0 0, 0 0;
+    background-size: auto, auto;
+}
+
 :root {
     --color-primary: #4B3621;
     --color-black: #181919;
     --color-white: #ece5d5;
+    font-family: Inter, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }

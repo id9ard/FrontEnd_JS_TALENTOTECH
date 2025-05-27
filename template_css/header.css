@@ -83,8 +83,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: 1vw;
-    font-family: "Inter", sans-serif;
-    font-size: 9vw;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 7.5vw;
     font-weight: bold;
     color: var(--color-white);
 }
