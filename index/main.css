@@ -137,8 +137,6 @@
     transform: translate(-50%, -50%);
 }
 
-.two_image-blur {}
-
 .two_content_item:hover .two_item-title {
     color: var(--color-white);
 }
