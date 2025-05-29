@@ -41,6 +41,15 @@
     line-height: 90%;
 }
 
+.menu_link {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.menu_link:hover {
+    color: var(--color-black);
+}
+
 .nav_content {
     width: 90%;
     height: 60%;

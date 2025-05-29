@@ -42,6 +42,8 @@ function ChangeMenu() {
             //Abrir menu
             document.querySelector(".header_menu").style.display = "flex";
             menu_node.value = "close";
+            // Cerrar el menu si se hace click en alguna opcion
+            changeSection();
         } else {
             //Cerrar menu
             document.querySelector(".header_menu").style.display = "none";
@@ -52,6 +54,17 @@ function ChangeMenu() {
     })
 }
 
+function changeSection() {
+    const section_node = document.querySelectorAll(".menu_text");
+    section_node.forEach(element => {
+        element.addEventListener("click", () => {
+            document.querySelector(".header_menu").style.display = "none";
+            menu_node.value = "open";
+            menu_node.innerHTML = `
+            <img class="menu" src="./img/${menu_node.value}.svg" alt="">`
+        })
+    });
+}
 
 changeImage();
 changeAudio();

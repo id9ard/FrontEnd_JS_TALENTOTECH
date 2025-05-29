@@ -1,5 +1,6 @@
 .one,
-.two {
+.two,
+.three {
     width: 100%;
     display: flex;
     align-items: center;
@@ -139,4 +140,75 @@
 
 .two_content_item:hover .two_item-title {
     color: var(--color-white);
+}
+
+.three_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-primary);
+    gap: 5vw;
+}
+
+.three_content-left {
+    height: 14vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.three_content-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    gap: 2vw;
+}
+
+.three_content-left-text {
+    font-size: 1.25vw;
+    font-weight: 300;
+    margin: 0;
+}
+
+.three_content-left-title {
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 90%;
+}
+
+.three_right_item {
+    border-radius: 100%;
+}
+
+.three_right_item:hover {
+    transform: scale(0.9);
+    transition: all .5s ease-in-out;
+}
+
+.three_item_content {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.three_item_content-title {
+    font-size: 1vw;
+    font-weight: 400;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin: 0;
 }
