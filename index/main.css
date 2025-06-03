@@ -212,3 +212,103 @@
     text-decoration: none;
     margin: 0;
 }
+
+.four {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 5vw;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.four_content {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    gap: 5vw;
+}
+
+.four_content-left {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/experience1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.four_content-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5vh;
+    color: var(--color-primary);
+
+}
+
+.four_text_title-small {
+    font-size: 1.25vw;
+    font-weight: 500;
+    margin: 0;
+    line-height: 125%;
+}
+
+.four_text_title-big {
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: "Archivo Black", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 90%;
+}
+
+.four_text_description {
+    font-size: .9vw;
+    font-weight: 300;
+    margin: 0;
+    line-height: 125%;
+}
+
+.four_content_button {
+    border: none;
+    border-radius: 50px;
+    padding: .75vh 1vw;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    background-image: url(../img/noise2.png);
+    background-position: 0 0, 0 0;
+    background-size: auto, auto;
+}
+
+.four_content_button-title {
+    font-size: 1.25vw;
+    font-weight: 300;
+    margin: 0;
+}
+
+.four_button-close {
+    position: absolute;
+    top: 10vw;
+    right: 5vw;
+    width: 2.75vw;
+    height: 2.75vw;
+    border-radius: 999px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.fa-solid {
+    font-style: normal;
+    font-variant: normal;
+}
