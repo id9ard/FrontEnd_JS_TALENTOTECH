@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.header_giftcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.header_giftcard-title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 15.3vw;
+  letter-spacing: .7vw;
+  color: var(--color-primary);
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  width: 100%;
+  height: 5vw;
+  position: fixed;
+  justify-content: center;
+  z-index: 10;
+}
+
+.header_menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  padding: 6vw;
+  background-color: var(--color-white);
+  background-image: url(../../img/noise2.png);
+  background-position: 0 0, 0 0;
+  background-size: auto, auto;
+  color: var(--color-primary);
+  z-index: 9;
+}
+
+.menu_text {
+  cursor: pointer;
+  font-size: 7vw;
+  font-weight: 600;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 90%;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.menu_link:hover {
+  color: var(--color-black);
+}
+
+.nav_content {
+  width: 90%;
+  height: 60%;
+  justify-content: space-between;
+  border-radius: 999px;
+  padding: 1vw 1.5vw;
+  box-shadow: 0 0 5px var(--color-primary);
+  background: linear-gradient(to bottom, var(--color-grey), var(--color-grey));
+  backdrop-filter: blur(5px);
+}
+
+.nav-left {
+  width: 3.50vw;
+  height: 2.50vw;
+  background-color: var(--color-primary);
+  border-radius: 999px;
+  justify-content: center;
+}
+
+.nav-right {
+  height: 100%;
+  gap: 1vw;
+}
+
+.navR_content-right {
+  width: 10vw;
+  height: 2.50vw;
+  justify-content: center;
+  padding: 0 .75vw;
+  gap: .5vw;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 999px;
+}
+
+.navR_content-left {
+  width: 2.75vw;
+  height: 2.50vw;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: 999px;
+}
+
+.nav_title {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.menu {
+  width: 55%;
+  height: 55%;
+}
+
+.audio {
+  width: 50%;
+  height: 50%;
+}
+
+.nav_logo {
+  width: 20%;
+  height: 70%;
+}
+
+.nav,
+.nav_content,
+.nav-right,
+.nav-left,
+.navR_content-right,
+.navR_content-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left,
+.navR_content-right,
+.navR_content-left {
+  cursor: pointer;
+  border: none;
+}
+
+.section__gifcard {
+  padding: 0 4rem;
+  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.article__gifcard_container {
+  width: 35%;
+}
+
+.giftcard__tarjeta {
+  background-color: var(--color-primary);
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  min-width: 200px;
+  height: 100%;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.tarjeta__destinatario {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.tarjeta__precio {
+  position: absolute;
+  padding: .5rem 2rem;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  align-content: center;
+}
+
+.error__monto,
+.error__nombre {
+  text-align: start;
+  font-size: x-small;
+  color: red;
+}
+
+.giftcard__personalizacion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+}
+
+.giftcard__personalizacion-titulo {
+  font-size: 2rem;
+}
+
+.giftcard__personalizacion-titulo,
+.giftcard__personalizacion-subtitulo {
+  color: black;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.nombre__input {
+  border: 1px solid #00000042;
+  border-radius: 0.3em;
+  padding: .4rem;
+}
+
+.ubicacion__container,
+.fondo__container {
+  text-align: center;
+}
+
+.monto {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.monto__input {
+  border: 1px solid #00000042;
+  border-radius: 0.3em;
+  padding: .4rem;
+}
+
+.ubicacion__cuadrado {
+  width: 2em;
+  height: 1.5em;
+  position: relative;
+  border: 1px solid #00000042;
+}
+
+.ubicacion__cuadrado-abajoderecha {
+  position: absolute;
+  width: 0.7em;
+  height: 0.5em;
+  background-color: #00000042;
+  right: 0;
+  bottom: 0;
+}
+
+.ubicacion__cuadrado-arribaizquierda {
+  position: absolute;
+  width: 0.7em;
+  height: 0.5em;
+  background-color: #00000042;
+  left: 0;
+  top: 0;
+}
+
+.ubicacion__cuadrado-abajoizquierda {
+  position: absolute;
+  width: 0.7em;
+  height: 0.5em;
+  background-color: #00000042;
+  left: 0;
+  bottom: 0;
+}
+
+.fondo__cuadrado {
+  width: 2em;
+  height: 1.5em;
+}
+
+.giftcard__button {
+  text-align: center;
+  padding: 0.2em 0.5em;
+  background-color: var(--color-primary);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  padding: .7rem 3rem;
+  border-radius: 50px;
+}
+
+.ubicacion,
+.fondo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ubicacion,
+.fondo {
+  gap: .7rem;
+}
+
+
+.color__container,
+.tamanio__container,
+.ubicacion__container,
+.fondo__container {
+  display: block;
+}
+
+.color__container {
+  text-align: center;
+  display: grid;
+  gap: .4rem;
+}
+
+.tamanio__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.color,
+.fondo {
+  flex-wrap: wrap;
+}
+
+.ubicacion__titulo,
+.fondo__titulo {
+  margin: 0.5em 0 0.5 0;
+}
+
+.giftcard__button:hover {
+  background-color: var(--color-black);
+}
+
+.fondo__cuadrado-lila {
+  background-color: blueviolet;
+  opacity: 80%;
+}
+
+.fondo__cuadrado-chocolate {
+  background-color: chocolate;
+  opacity: 80%;
+}
+
+.fondo__cuadrado-cyan {
+  background-color: darkcyan;
+  opacity: 80%;
+}
+
+.giftcard__button a {
+  text-decoration: none;
+  color: white;
+}
+
+.checkout__container-input--row {
+  background-color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.modal_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+
+.modal {
+  width: 30vw;
+  height: 30vh;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  border: 1.5px solid var(--color-black);
+}
+
+.modal_text {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 90%;
+  color: var(--color-black);
+}
+
+.modal_cerrar {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: var(--color-black);
+}
+
+@media screen and (width <=1000px) {
+  .giftcard__tarjeta {
+    font-size: 0.75em;
+  }
+
+  .article__gifcard_container {
+    width: 100%;
+  }
+
+  .section__gifcard {
+    gap: 3rem;
+  }
+
+  .four_button-close {
+    width: 3.75vh;
+    height: 3.75vh;
+    font-size: 1.75vh;
+  }
+}
+
+@media screen and (width <=770px) {
+  .section__gifcard {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .giftcard__personalizacion {
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .article__gifcard_container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .giftcard__personalizacion-titulo {
+    font-size: 1.2rem;
+  }
+
+  .nombre__input,
+  .monto {
+    width: 100%;
+  }
+
+  .ubicacion,
+  .fondo {
+    gap: 2rem;
+  }
+
+  .giftcard__tarjeta {
+    min-height: 300px;
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .giftcard__personalizacion {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  .section__gifcard {
+    gap: 2rem;
+  }
+
+  .modal {
+    width: 40vw;
+    height: 35vh;
+  }
+}
+
+@media screen and (width <=460px) {
+
+  .giftcard__tarjeta {
+    margin-top: 0.5rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .giftcard__tarjeta {
+    font-size: 0.6em;
+  }
+
+  .section__gifcard {
+    gap: 1.5rem;
+  }
+
+  .modal {
+    width: 60vw;
+    height: 40vh;
+  }
+
+}

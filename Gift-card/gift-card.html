@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essentia | Tanzania Safari</title>
+
+  <link rel="icon" href="../img/poncho_2055928.png">
+
+  <link rel="stylesheet" href="../index/index.css">
+  <link rel="stylesheet" href="../index/main.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Css/gift-card.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="nav">
+
+      <nav class="nav_content">
+        <button class="nav-left" value="open">
+          <img class="menu" src="../img/open.svg" alt="">
+        </button>
+        <div class="nav-right">
+
+          <button class="navR_content-right">
+            <img class="nav_logo" src="../img/poncho_2055928.png" alt="icon">
+            <h1 class="nav_title">Brossui</h1>
+          </button>
+
+        </div>
+      </nav>
+    </div>
+    <div class="header_menu">
+      <div>
+        <span class="menu_text"><a href="../index.html" class="menu_link">HOME</a></span>
+      </div>
+      <div>
+        <span class="menu_text"><a href="../index.html#section_about" class="menu_link">ABOUT</a></span>
+      </div>
+      <div>
+        <span class="menu_text"><a href="../index.html#two" class="menu_link">EXPLORE</a></span>
+      </div>
+      <div>
+        <span class="menu_text"><a href="#" class="menu_link">GIFTCARD</a></span>
+      </div>
+      <div>
+        <span class="menu_text"><a href="../index.html#section_contact" class="menu_link">CONTACT</a></span>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <main class="main">
+    <div class="header_giftcard">
+      <h1 class="header_giftcard-title">GIFTCARD</h1>
+    </div>
+    <section class="section__gifcard">
+
+      <article class="article__gifcard_container">
+        <div id="giftcard__tarjeta__color-js" class="giftcard__tarjeta">
+          <p class="tarjeta__destinatario__parrafo">GIFT CARD para</p>
+          <h4 class="tarjeta__destinatario">DESTINATARIO</h4>
+          <div class="tarjeta__precio">
+            <span>$</span><span class="tarjeta__precio-js">00000</span><span>.00</span>
+          </div>
+        </div>
+      </article>
+      <article class="article__gifcard_container">
+        <div class="giftcard__personalizacion">
+
+          <form id="form_giftcard-js">
+            <h4 class="giftcard__personalizacion-subtitulo">Nombre</h4>
+            <input id="gift-card__nombre-js" type="text" placeholder="Ingrese nombre" class="nombre__input" required />
+            <p class="error__nombre" id="error__nombre-js"></p>
+            <div class="monto">
+              <h4 class="monto__titulo giftcard__personalizacion-subtitulo">
+                Monto
+              </h4>
+              <input id="monto-js" type="text" class="monto__input" placeholder="Ingrese monto (A partir de $10.000)"
+                required />
+              <p class="error__monto" id="error__monto-js"></p>
+            </div>
+            <h4 class="ubicacion__titulo giftcard__personalizacion-subtitulo">
+              Ubicación
+            </h4>
+            <div class="ubicacion">
+              <div class="ubicacion__container">
+                <div class="ubicacion__cuadrado">
+                  <div class="ubicacion__cuadrado-abajoizquierda"></div>
+                </div>
+                <span class="circulo__input"><input type="radio" name="ubicacion" value="abajoizquierda" /></span>
+              </div>
+              <div class="ubicacion__container">
+                <div class="ubicacion__cuadrado">
+                  <div class="ubicacion__cuadrado-arribaizquierda"></div>
+                </div>
+                <span class="circulo__input"><input type="radio" name="ubicacion" value="arribaizquierda" /></span>
+              </div>
+              <div class="ubicacion__container">
+                <div class="ubicacion__cuadrado">
+                  <div class="ubicacion__cuadrado-abajoderecha"></div>
+                </div>
+                <span class="circulo__input"><input type="radio" name="ubicacion" value="abajoderecha" /></span>
+              </div>
+            </div>
+
+            <h4 class="fondo__titulo giftcard__personalizacion-subtitulo">
+              Fondo
+            </h4>
+            <div class="fondo">
+              <div class="fondo__container">
+                <div class="fondo__cuadrado fondo__cuadrado-lila"></div>
+                <span class="circulo__input"><input type="radio" name="fondo" value="blueviolet" /></span>
+              </div>
+              <div class="fondo__container">
+                <div class="fondo__cuadrado fondo__cuadrado-chocolate"></div>
+                <span class="circulo__input"><input type="radio" name="fondo" value="chocolate" /></span>
+              </div>
+              <div class="fondo__container">
+                <div class="fondo__cuadrado fondo__cuadrado-cyan"></div>
+                <span class="circulo__input"><input type="radio" name="fondo" value="darkcyan" /></span>
+              </div>
+            </div>
+            <button id="giftcard__button-js" type="submit" class="giftcard__button">Continuar</button>
+          </form>
+        </div>
+
+
+      </article>
+    </section>
+  </main>
+
+  <dialog class="modal" id="modal">
+    <div class="four_button-close modal_cerrar" id="modal_cerrar">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="modal_container">
+      <img class="modal_img" src="" alt="" width="70px" height="70px">
+      <p class="modal_text"></p>
+    </div>
+  </dialog>
+
+  <script src="./JS/Gift-card.js"></script>
+</body>
+
+</html>
